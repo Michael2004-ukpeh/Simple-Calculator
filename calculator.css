@@ -1,0 +1,112 @@
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     margin: 0;
+     background-image: url("corgi.jpg");
+     background-repeat: no-repeat;
+     background-size: 100%;
+ }
+ 
+ .header {
+     top: 0;
+     background-color: saddlebrown;
+     margin: 0, 0, 0, 10px;
+     display: block;
+     padding: 0;
+ }
+ 
+ .brand {
+     font-size: 60px;
+     text-align: center;
+     font-family: 'Great Vibes', cursive;
+     font-weight: normal;
+     margin: 0;
+     /* margin: 60px 0; */
+     color: #ffffff;
+     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+ }
+ 
+ .calculator {
+     width: 50%;
+     height: auto;
+     margin: auto;
+     margin-top: 10px;
+     top: 50%;
+     bottom: 50%;
+     right: 50%;
+     left: 50%;
+ }
+ 
+ .row {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     border-collapse: collapse;
+     align-items: stretch;
+     justify-content: space-between;
+ }
+ 
+ .row::after {
+     content: "";
+     clear: both;
+     display: block;
+ }
+ 
+ .row :last-child {
+     background-color: rgb(245, 76, 14);
+ }
+ 
+ .key {
+     border: 1px solid black;
+     float: left;
+     width: 24.5%;
+     flex-grow: 1;
+     background-color: grey;
+     text-align: center;
+     padding: 30px;
+     font-size: 40px;
+     cursor: pointer;
+     border-radius: 0;
+     font-family: Comic -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+ .c {
+     width: 49.5%;
+ }
+ 
+ .zero {
+     width: 74.5%;
+ }
+ 
+ .output {
+     width: 100%;
+     background-color: #000000;
+     color: white;
+     text-align: right;
+     font-family: monospace;
+     border: 1px solid black;
+     float: left;
+     flex-grow: 1;
+     padding: 30px;
+     font-size: 40px;
+ }
+ 
+ .row-head {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     border-collapse: collapse;
+     align-items: stretch;
+ }
+ 
+ .footer {
+     background-color: saddlebrown;
+     color: #fff;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     text-align: center;
+     font-size: 30px;
+     padding: 30px;
+     margin-top: 10px;
+ }
